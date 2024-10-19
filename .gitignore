@@ -1,0 +1,9 @@
+# すべてのバイナリファイルを無視
+*.exe
+*.dll
+*.bin
+*.iso
+*.img
+*.zip
+*.tar.gz
+*.rar

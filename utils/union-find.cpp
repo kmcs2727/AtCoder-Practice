@@ -8,14 +8,12 @@ using namespace std;
 // URL: https://atcoder.jp/contests/tessoku-book/tasks/tessoku_book_bn
 class UnionFind {
   public:
-    int parent[100009];
-    int siz[100009];
+    vector<int> parent;
+    vector<int> siz;
 
     void init(int N) {
-        for(int i = 1; i <= N; i++) {
-            parent[i] = -1;
-            siz[i] = 1;
-        }
+        parent.resize(N + 1, -1);
+        siz.resize(N + 1, 1);
     }
 
     int root(int x) {
